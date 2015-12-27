@@ -1,0 +1,23 @@
+/* Panels */
+
+.panel .row .wrapper *, .panel .row .delete, .panel .row:hover .delete, .panel .suggestions {
+	transition: opacity .2s ease-in-out;
+	-webkit-transition: opacity .2s ease-in-out;
+}
+
+.panel .row .wrapper {
+	transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+}
+
+.panel .row input[type=text], .panel textarea {
+	transition: color .2s ease-in-out;
+	-webkit-transition: color .2s ease-in-out;
+}
+
+/* Controls */
+
+.button, .button:active, .button:hover {
+	transition: background .22s ease-in-out;
+	-webkit-transition: background .22s ease-in-out;
+}

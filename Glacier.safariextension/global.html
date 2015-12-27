@@ -1,0 +1,26 @@
+<!--
+
+The main uses for a global page are:
+
+To hold the logic for handling Safari toolbar items.
+To hold the logic for handling extension menus and contextual menu items.
+To hold the logic for handling settings changes.
+To hold large blocks of logic or data used by extension bars.
+To hold large blocks of logic or data used by injected scripts.
+You can also use the global page to hold logic or data used by a popover, but if the popover is specified in Extension Builder, the popover file loads only once,
+just like the global page file, so there is no gain in efficiency.
+If you have multiple popovers that use the same data or logic, however, it makes sense to have one copy in the global page, instead of a copy in each popover.
+
+-->
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Glacier</title>
+</head>
+<body>
+	Welcome to Glacier!
+</body>
+<script type="application/javascript" src="global.js"></script>
+</html>

@@ -1,0 +1,237 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro Light';
+	src: url('../fonts/SourceSansPro-Light.ttf');
+}
+
+* {
+	border: 0;
+	box-sizing: border-box;
+	color: #5d6e7e;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	margin: 0;
+	outline: none;
+	padding: 0
+}
+
+a, a:visited {
+	color: #5d6e7e;
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active { text-decoration: underline }
+
+ul { list-style-type: none }
+
+.panel {
+	background: #fff;
+	border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #eaeaea;
+	margin-top: 0px;
+	position: relative;
+	width: 100%;
+}
+
+.panel:last-child { margin-bottom: 10px }
+
+.panel-header {
+	color: #95a5a6;
+	cursor: default;
+	margin: 15px;
+	text-transform: uppercase;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.panel .row {
+	border-bottom: 1px solid #f8f8f8;
+	height: 46px;
+	margin-left: 20px;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.panel .row:last-of-type { border: 0 }
+
+.panel .row .wrapper {
+	background: #fff;
+	height: 100%;
+	left: 0;
+	position: relative;
+	z-index: 1;
+}
+
+.panel .row .label {
+	cursor: default;
+	display: inline-block;
+	float: left;
+	margin: 16px 20px 0 0;
+	z-index: 1;
+}
+
+.panel .row .label span {
+	color: #95a5a6;
+	font-size: 12px;
+	padding-left: 4px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.panel .row .icon {
+	background: url('assets/icon-folder.png') no-repeat center center;
+	height: 100%;
+	width: 16px
+}
+
+.panel .row a {
+	position: relative;
+	top: 16px;
+}
+
+.panel .row .detail {
+	background: url('assets/icon-row-detail.png') no-repeat center center;
+	cursor: pointer;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+}
+
+.panel .row .delete {
+	background: url('assets/row_delete.png') no-repeat center center;
+	cursor: pointer;
+	opacity: .2;
+	padding: 22px 25px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.panel .row:hover .delete { opacity: 1.0 }
+
+.panel .row .confirm {
+	background: #2ecc71 url('assets/menu_confirm.png') no-repeat center center;
+	cursor: pointer;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	visibility: hidden; /* iOS Mobile fix */
+	width: 50px;
+}
+
+
+/* Textboxes, textareas & Placeholder Text */
+
+input, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border-radius: 0;
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-size: 14px;
+    outline: none;
+}
+
+input:invalid {box-shadow: none}
+
+::-webkit-input-placeholder {
+	color: #95a5a6;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.panel .row .label + input[type=email],
+.panel .row .label + input[type=password],
+.panel .row .label + input[type=text],
+.panel .row input[type=text]:last-child {
+	background: none;
+	border: 0;
+	color: #3598dc;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Buttons */
+
+input[type=button]::-moz-focus-inner {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.button {
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 14px 0;
+	text-align: center;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Button Colors */
+
+.button.blue, #compose-message .header .btn {background: #3498db}
+.button.lightblue {background: #75d3f0}
+.button.graphite {background: #505050}
+.button.green {background: #01cccc}
+.button.red {background: #e74c3c}
+
+/* Button Active */
+
+.button.blue:active, .button.lightblue:active, .button.green:active, .button.red:active {color: #e4e8e9}
+
+.button.blue:active, #compose-message .header .btn:active {background: #2873a6 !important}
+.button.lightblue:active {background: #43798a !important}
+.button.graphite:active {background: #3e3e3e !important}
+.button.green:active {background: #00bdbd !important}
+.button.red:active {background: #c0392b !important}
+
+ /* Button Hover */
+
+.button.blue:hover, #compose-message .header .btn:hover {background: #3aa9f4}
+.button.lightblue:hover {background: #75d3f0}
+.button.graphite:hover {background: #5a5a5a}
+.button.green:hover {background: #01d4d4}
+.button.red:hover {background: #ff5442}
+
+/* Button Glow Animation */
+
+.button.blue.glow, .button.lightblue.glow, .button.green.glow, .button.red.glow {
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.button.blue.glow {
+	animation-name: glow-blue;
+	-webkit-animation-name: glow-blue;
+}
+
+.button.lightblue.glow {
+	animation-name: glow-lightblue;
+	-webkit-animation-name: glow-lightblue;
+}
+
+ .button.green.glow {
+	animation-name: glow-green;
+	-webkit-animation-name: glow-green;
+}
+
+.button.red.glow {
+	animation-name: glow-red;
+	-webkit-animation-name: glow-red;
+}
