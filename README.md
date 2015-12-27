@@ -1,4 +1,5 @@
-# Glacier - Dec. 26, 2015
+# Glacier
+# Dec. 26, 2015
 A tiny bookmark manager for Safari
 
 This project falls under the "No License" license as seen here: http://choosealicense.com/licenses
