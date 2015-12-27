@@ -13,16 +13,15 @@
 			width: 250px
 		}
 
-		input[type=button] {
-			border-radius: 4px;
-			color: #fff;
-			cursor: pointer;
-			float: right;
-			margin: 15px 0;
-			min-width: 90px;
-			padding: 6px 22px;
-			-webkit-font-smoothing: subpixel-antialiased
+		.button {
+			height: 32px;
+			margin: 20px 10px 0 0;
+			width: 100px
 		}
+
+		.button:last-child  { margin-right: 0 }
+
+		#cancel { margin-left: 15px }
 
 	</style>
 </head>
@@ -40,11 +39,11 @@
 	<div class="panel-header">Tags</div>
 	<div class="panel">
 		<div class="row">
-			<a href="javascript:void(0);">Add new...</a>
+			<input id="name" type="text" value="" maxlength="50" placeholder="Separate tags with a commas" />
 		</div>
 	</div>
-	<input id="add-bookmark" type="button" class="button blue" value="Done" />
-	<input id="cancel" type="button" class="button red" value="Cancel" />
+	<input id="cancel" type="button" class="button" value="Cancel" />
+	<input id="add-bookmark" type="button" class="button" value="Done" />
 </body>
 <script type="application/javascript" src="global.js"></script>
 </html>

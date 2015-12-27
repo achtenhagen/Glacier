@@ -18,17 +18,6 @@
 	<string>1</string>
 	<key>Chrome</key>
 	<dict>
-		<key>Bars</key>
-		<array>
-			<dict>
-				<key>Filename</key>
-				<string>bars/bookmarks.html</string>
-				<key>Identifier</key>
-				<string>bookmarks-bar</string>
-				<key>Label</key>
-				<string>Bookmarks Bar</string>
-			</dict>
-		</array>
 		<key>Database Quota</key>
 		<integer>5242880</integer>
 		<key>Global Page</key>
