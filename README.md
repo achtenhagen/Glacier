@@ -4,6 +4,7 @@ A tiny bookmark manager for Safari
 This project falls under the "No License" license as seen here: http://choosealicense.com/licenses
 
 Written by Maurice Achtenhagen on December 26, 2015
+
 maurice@achtenhagen.me
 
 Fioware Studios © 2015 
