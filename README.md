@@ -23,3 +23,8 @@ Developer References
 - Debugging Extensions:        https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/DebuggingExtensions/DebuggingExtensions.html#//apple_ref/doc/uid/TP40009977-CH9-SW1
 - Distributing Your Extension: https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/DistributingYourExtension/DistributingYourExtension.html#//apple_ref/doc/uid/TP40009977-CH19-SW2
 - Updating Extension:          https://developer.apple.com/library/safari/documentation/Tools/Conceptual/SafariExtensionGuide/UpdatingExtensions/UpdatingExtensions.html#//apple_ref/doc/uid/TP40009977-CH12-SW1
+
+Important Notes
+---------------
+- To develop extensions for Safari, you need to sign up for the Apple Developer Program online at https://developer.apple.com.
+- Launching an installed Safari plug-in from an extension by using the HTML <object> or <embed> tags is prohibited.
