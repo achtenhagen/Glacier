@@ -6,7 +6,7 @@ This project falls under the "No License" license as seen here: http://chooseali
 
 Created on December 26, 2015
 
-By Maurice Achtenhagen
+Maurice Achtenhagen
 
 maurice@achtenhagen.me
 
