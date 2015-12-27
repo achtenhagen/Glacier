@@ -28,3 +28,5 @@ Important Notes
 ---------------
 - To develop extensions for Safari, you need to sign up for the Apple Developer Program online at https://developer.apple.com.
 - Launching an installed Safari plug-in from an extension by using the HTML <object> or <embed> tags is prohibited.
+- An extension should be limited to a single purpose or service.
+- The base URI ends in a forward slash. Do not begin the path with another.
