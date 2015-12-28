@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Source Sans Pro';
-	src: url('../fonts/SourceSansPro-Regular.ttf');
+	src: url('fonts/SourceSansPro-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Source Sans Pro Light';
-	src: url('../fonts/SourceSansPro-Light.ttf');
+	src: url('fonts/SourceSansPro-Light.ttf');
 }
 
 * {
@@ -45,7 +45,6 @@ ul { list-style-type: none }
 	cursor: default;
 	margin: 15px;
 	text-transform: uppercase;
-	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -85,9 +84,10 @@ ul { list-style-type: none }
 }
 
 .panel .row .icon {
-	background: url('assets/icon-folder.png') no-repeat center center;
+	background: url('assets/icon-folder.png') no-repeat 0 center;
+	float: left;
 	height: 100%;
-	width: 16px
+	width: 22px
 }
 
 .panel .row a {
@@ -129,7 +129,7 @@ ul { list-style-type: none }
 }
 
 
-/* Textboxes, textareas & Placeholder Text */
+/* Textboxes, Textareas & Placeholder Text */
 
 input, textarea {
     -webkit-appearance: none;
@@ -157,7 +157,6 @@ input:invalid {box-shadow: none}
 .panel .row input[type=text]:last-child {
 	background: none;
 	border: 0;
-	color: #3598dc;
 	display: inline-block;
 	height: 100%;
 	width: 100%;
@@ -177,21 +176,4 @@ input:invalid {box-shadow: none}
 
 /* Button Active */
 
-.button:active {
-	background: rgba(0, 0, 0, .15);
-	color: #fff
-}
-
-.button.blue:active, #compose-message .header .btn:active {background: #2873a6 !important}
-.button.lightblue:active {background: #43798a !important}
-.button.graphite:active {background: #3e3e3e !important}
-.button.green:active {background: #00bdbd !important}
-.button.red:active {background: #c0392b !important}
-
- /* Button Hover */
-
-.button.blue:hover, #compose-message .header .btn:hover {background: #3aa9f4}
-.button.lightblue:hover {background: #75d3f0}
-.button.graphite:hover {background: #5a5a5a}
-.button.green:hover {background: #01d4d4}
-.button.red:hover {background: #ff5442}
+.button:active { background: #eaeaea }
